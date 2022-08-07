@@ -1,7 +1,6 @@
 import './game1.css';
 
 import { Header } from "../../main/header";
-import { SlideThird} from "./slide3";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 
@@ -26,13 +25,11 @@ export const Game1 = ()=>{
                         <Carousel.Item>
                             <Slide2 />  
                         </Carousel.Item>
+                        <Carousel.Item> 
+                           <div className='fon13'></div>
+                         </Carousel.Item>
                         <Carousel.Item>
-                             <div className='fon'>
-                                <SlideThird/>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                             <div className='fon4'>
+                             <div className='fon14'>
                                 <div className='slider'>
                                     <h1>Нужно ли</h1>
                                     <div className='h7'>Работать больше, чтобы стать богаче?</div>

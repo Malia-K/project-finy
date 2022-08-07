@@ -8,7 +8,7 @@ import React from 'react';
 import {Carousel} from "react-bootstrap";
 import { ReactComponent as Slide1 } from './photos/slide1.svg';
 import { ReactComponent as Slide2 } from './photos/slide2.svg';
-import { ReactComponent as Slide3 } from './photos/slide3.svg';
+// import slide3 from './photos/slide3.png';
 import { Link } from "react-router-dom";
 
 
@@ -27,7 +27,7 @@ export const Game2 = ()=>{
                             <Slide2 />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <Slide3 />
+                            <div className='fon3'></div>
                         </Carousel.Item>
                         <Carousel.Item>
                              <div className='fon4'>

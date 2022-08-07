@@ -1,11 +1,10 @@
 .background{
     position: absolute;
-    width: 1560px;
-    height: 860px;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: 70px;
-
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url(gameBack.png);
+    background: rgba(0, 147, 147, 0.17);
 }
 
 .slide{
@@ -33,13 +32,14 @@
   
 .carousel-control-prev-icon {
     right: 1100px !important;
+    
     background-image: url("./photos/play.png") !important;
     transform: scaleX(-1);
 
 }
 
 .carousel-control-next-icon {
-
+   
     background-image: url("./photos/play.png") !important;
 
 }
@@ -65,20 +65,20 @@ font-weight: 380;
 font-size: 15px;
 line-height: 15px;
 }
-.fon{
+.fon13{
     width: 1180px;
     height: 730px;
     left: 182px;
     top: 59px;
-    background: url(slide3.png);
+    background: url(/src/components/content/gameOne/photos/slide3.jpg);
 }
 
-.fon4{
+.fon14{
     width: 1180px;
     height: 730px;
     left: 182px;
     top: 59px;
-    background: url(slide4.png);
+    background: url(slide1-4.png);
 }
 
 .stolbiki{
@@ -239,3 +239,256 @@ line-height: 25px;
 color: #FFFFFF;
 
 } 
+
+
+
+
+
+
+
+@media(max-width: 450px){
+    .background{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 10%;
+        background: rgba(200, 143, 28, 0.416);
+        padding: 5% 7% 5% 7%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slide{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        left: 15%;
+    }
+    
+    .slides{
+        width: 80%;
+        height: 60%;
+        left: 182px;
+        top: 59px;
+    }
+    
+    
+    .carousel-indicators [data-bs-target] {
+        width: 15px !important;
+        height: 15px !important;
+        border: 1px solid transparent !important;
+        border-radius: 1px;
+      }
+      
+    .carousel-control-prev-icon {
+        right: 1100px !important;
+        
+        background-image: url("./photos/play.png") !important;
+        transform: scaleX(-1);
+    
+    }
+    
+    .carousel-control-next-icon {
+       
+        background-image: url("./photos/play.png") !important;
+    
+    }
+    
+    
+    .MDBCardText{
+        width: 175px;
+        padding-top: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 12px;
+    line-height: 20px;
+    }
+    
+    .MDBCardTitle{
+        width: 183px;
+        left: 15px;
+        top: 149px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 15px;
+    line-height: 15px;
+    }
+    .fon13{
+        width: 1180px;
+        height: 730px;
+        left: 182px;
+        top: 59px;
+        background: url(/src/components/content/gameOne/photos/slide3.jpg);
+    }
+    
+    .fon14{
+        width: 1180px;
+        height: 730px;
+        left: 182px;
+        top: 59px;
+        background: url(slide1-4.png);
+    }
+    
+    .stolbiki{
+        position: absolute;
+    width: 1082px;
+    height: 303px;
+    left: 49px;
+    top: 21px;
+    
+    }
+    
+    .slider{
+        position: absolute;
+        width: 940px;
+        height: 220px;
+        left: 120px;
+        top: 95px;
+    
+        background: #F0F0F0;
+        border-radius: 15px;
+    }
+    
+    h1{
+        position: absolute;
+    width: 154px;
+    height: 28px;
+    left: 85px;
+    top: 50px;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    /* identical to box height, or 93% */
+    
+    
+    color: #000000;
+    
+    }
+    
+    .h7{
+        position: absolute;
+    width: 379px;
+    height: 28px;
+    left: 85px;
+    top: 100px;
+    
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    
+    
+    color: #000000;
+    }
+    
+    
+    .gameButton{
+        position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 85px;
+    top: 145px;
+    
+    background: #1B717F;
+    box-shadow: 0px 4px 4px rgba(36, 119, 133, 0.42);
+    border-radius: 15px;
+    }
+    
+    .h8{
+        position: absolute;
+    width: 144px;
+    height: 28px;
+    left: 92px;
+    top: 5px;
+    
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height, or 112% */
+    
+    
+    color: #FFFFFF;
+    }
+    
+    a { text-decoration: none; }  
+    
+    .sliding {
+        background:  #F0F0F0;
+        overflow: hidden;
+        
+    
+        transition: all .5s ease-in-out;
+        height: 0;
+        border-radius: 15px;
+        padding: 0 1em;
+        color: transparent;
+    }
+    
+    .sliding:target {
+    height: 360px;
+    color: #000;   
+    }
+    
+    
+    h4{
+        position: absolute;
+    width: 850px;
+    height: 168px;
+    left: 85px;
+    top: 215px;
+    
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 140% */
+    }
+    
+    .gameStartButton{
+        position: absolute;
+        width: 304px;
+        height: 68px;
+        left: 750px;
+        top: 590px;
+    
+        background: #1B717F;
+        border-radius: 25px;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 5px 5px rgba(26, 48, 52, 0.42);
+    }
+    .gameStartButton:hover {
+        transform: scale(1.03);
+        box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+      }
+    
+    h6{
+        position: absolute;
+    width: 131px;
+    height: 31px;
+    left: 80px;
+    top: 18px;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 25px;
+    /* or 71% */
+    
+    
+    color: #FFFFFF;
+    
+    } 
+}

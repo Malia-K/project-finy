@@ -8,25 +8,7 @@ import { Link } from "react-router-dom";
 
 export const SecondGame = () =>{
     const questions = [
-        {
-			questionText: 'Финансовая грамотность — это?',
-			answerOptions: [
-				{ answerText: 'Сочетание знаний и навыков в сфере денежных потоков', isCorrect: false },
-				{ answerText: 'Правила грамотного использования денег', isCorrect: false },
-				{ answerText: 'Понимание как работают деньги', isCorrect: false },
-				{ answerText: 'Все выше перечисленное', isCorrect: true },
-			],
-		},
-		{
-			questionText: 'Самая важная составляющая финансово грамотного человека:',
-			answerOptions: [
-				{ answerText: 'Большая зарплата', isCorrect: false },
-				{ answerText: 'Упорство', isCorrect: false },
-				{ answerText: 'Дисциплина', isCorrect: true },
-				{ answerText: 'Расточительство', isCorrect: false },
-			],
-		},
-		
+        
 		{
 			questionText: 'Представьте, что в предстоящие 5 лет цены на товары, которые вы покупаете, увеличатся вдвое. Если ваш доход не увеличится, вы сможете купить:',
 			answerOptions: [
@@ -36,47 +18,43 @@ export const SecondGame = () =>{
 				
 			],
 		},
-		{
-			questionText: 'Рассчитай, какую сумму может откладывать семья  ежемесячно, если их совокупный доход составляет 250.000 тг. Расходы на самое необходимое — 100.000 тг. Отец тратит на машину, спорт, одежду и обувь ежемесячно 45.000 тг., а его жена  тратит на косметику, спорт, одежду, обувь, театр и др. — 59.000 тг. На их сына , который ходит в детский сад, уходит 25.000 тг.',
+        {
+			questionText: 'Как называется процесс подорожания шашлыков которые стояли 250тг в 2015г, и 900тг в 2022?',
 			answerOptions: [
-				{ answerText: '12.000 тг', isCorrect: false },
-				{ answerText: '45.000 тг', isCorrect: false },
-				{ answerText: '38.000 тг', isCorrect: false },
-				{ answerText: '21.000 тг', isCorrect: true },
+                { answerText: 'Ужас', isCorrect: false },
+                { answerText: 'Девальвация', isCorrect: false },
+				{ answerText: 'Инфляция', isCorrect: true },		
 			],
 		},
         {
-			questionText: 'Чтобы бы быть богатым нужно работать на износ и иметь несколько работ на полную ставку',
+			questionText: 'Какие виды денег существуют в мире?',
 			answerOptions: [
-				{ answerText: 'Правда', isCorrect: false },
-				{ answerText: 'Ложь', isCorrect: true },
+                { answerText: 'Наличные деньги', isCorrect: false },
+                { answerText: 'Безналичные деньги', isCorrect: false },
+                { answerText: 'Криптовалюта', isCorrect: false },
+				{ answerText: 'Все выше перечисленное', isCorrect: true },		
 			],
 		},
         {
-			questionText: 'Без чего невозможно грамонтное управление деньгами?',
+			questionText: 'Рассчитай, сколько необходимо ежемесячно откладывать на покупку, если в твоем распоряжении 12 месяцев, текущая стоимость будущей покупки 270.000 тенге, а инфляция за год составит 10%.',
 			answerOptions: [
-				{ answerText: 'Больших трат превышающие доход', isCorrect: false },
-				{ answerText: 'Брать в долг или кредит', isCorrect: false },
-				{ answerText: 'Банк, страховая или брокерская организация', isCorrect: true },
-				{ answerText: 'Без большой зарплаты ', isCorrect: false },
+                { answerText: '25000', isCorrect: false },
+                { answerText: '24750', isCorrect: true },		
+                { answerText: '21500', isCorrect: false },
+                { answerText: '23250', isCorrect: false },
 			],
 		},
         {
-			questionText: 'Представьте, что вы получили 500.000 тг. На что вы их потратите? (У вас нет долгов, кредитов, расрочек и других платежей)',
+			questionText: 'Криптовалюта - это?',
 			answerOptions: [
-				{ answerText: 'Часть процента сберегу как "подушку" на черный день', isCorrect: true },
-				{ answerText: 'Куплю вещь за 400к которую давно хотел(-а) приобрести', isCorrect: false },
-				{ answerText: 'Потрачу за полгода, и не буду вливать в накопления', isCorrect: false },
+                { answerText: 'Электронная валюта, которая может хранится у нас в банковских картах', isCorrect: false },
+                { answerText: 'Цифровая виртуальная валюта, представляющая собой зашифрованную информацию, защищенную от копирования.', isCorrect: true },		
+                { answerText: 'Вид денег которую исполльзуют для оплаты услуг и товаров', isCorrect: false },
+
 			],
 		},
-        {
-			questionText: 'Так ли необходим пассивный заработок с биржи?',
-			answerOptions: [
-				{ answerText: 'Нет, ни в коим случае', isCorrect: false },
-				{ answerText: 'Нет, если не имеете достаточных знаний в этой области', isCorrect: true  },
-                { answerText: 'Да, и сделать его активным источником дохода', isCorrect: false },
-			],
-		},
+		
+		
 	];
     
 	const [currentQuestion, setCurrentQuestion] = useState(0);

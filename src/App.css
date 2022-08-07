@@ -1,27 +1,42 @@
-/* html {
-    scroll-behavior: inherit;
-} */
 
 .header{
-    position:absolute;
-    height: 70px;
-    width: 1560px;
+    display: flex;
+    position :absolute;
+    height: 8%;
+    width: 100%;
     background-color: white;
-    left: 0px;
-    top: 0px;
+    align-items: center;
+    
 }
-
-.headerText{
+.logoSide{
     position: absolute;
-    width: 55px;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    padding-left: 7%;
+    align-items: center;
+   
+}
+.textSide{
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 40%;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.headerText{
+    position: relative;
+    width: auto;
     height: 23px;
-    top: 24px;
+
 
     font-family: 'Open Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-    font-weight: 350;
-    font-size: 21px;
-    line-height: 25px;
+    font-weight: 360;
+    font-size: 100%;
     color: #000000;
 }
 
@@ -31,40 +46,33 @@ a{
 }
 
 .logo{
-    position: absolute;
-    width:100px;
-    height: 50px;
-    left: 100px;
-    top:10px;
+    position: relative;
+    width:60%;
+    height: 40%;
+    
 }
 
 .zagolovok{
+    display: flex;
+    top:8%;
+    width: 100%;
+    height: 40%;
     position: absolute;
-    z-index: 1;
     background: url(back.png);
 }
 
 
-.theory{
-    position: absolute;
-    width: 1560px;
-    height: 636px;
-    padding: 0px 80px 0px 80px;
-    top: 450px;
-    background: #FFFFFF;
-}
 
 .text1{
     position: absolute;
     width: 600px;
-    height: 130px;
-    left: 100px;
-    top: 70px;
+    left: 7%;
+    top: 30px;
 
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 580;
-    font-size: 45px;
+    font-size: 40px;
     color: #FFFFFF;
 }
 
@@ -72,8 +80,8 @@ a{
     position: absolute;
     width: 560px;
     height: 68px;
-    left: 100px;
-    top: 239px;
+    left: 7%;
+    top: 170px;
 
     font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Montserrat', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -85,37 +93,64 @@ a{
 
 .icon{
     position: absolute;
-    width: 422px;
-    height: 346px;
-    left: 980px;
-    top: 2px;
+    width: 380px;
+    height: 90%;
+    left: 70%;
+    top: 2%;
     z-index: 3;
 }
 
 
-.text3{
+
+.theory{
+    display: flex;
     position: absolute;
-    width: 1059px;
-    height: 39px;
-    left: 200px;
-    top: 79px;
+    width: 100%;
+    height: auto;
+    padding: 2% 14% 2% 14%;
+    top: 48%;
+    background: #FFFFFF;
+    flex-direction: column;
+}
+
+.text3{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: auto;
+    /* left: 10%; */
+    margin: 5% 0 0 0;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 590;
-    font-size: 30px;
+    font-size: 120%;
     line-height: 30px; 
     color: #000000;
 }
-
+.text4{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: auto;
+    /* left: 10%; */
+    margin: 2% 0 5% 0;
+    /* top: 15%; */
+    /* top: "143px", fontWeight: "400", fontSize: "20px",lineHeight: "28px"}} */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 28px; 
+    color: #000000;
+}
 
 .games{
     position: absolute;
-    width: 1560px;
-    height: 2480px;
-    left: 0px;
-    top: 1086px;
-    padding: 145px 298px 145px 298px;
+    width: 100%;
+    height: auto;
+    top: 118%;
+    padding: 7% 14% 7% 14%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,13 +158,15 @@ a{
 }
 
 .game{
+   display: flex;
     position: relative;
-    width: 964px;
+    margin: 5% 0 5% 0;
+    width: 100%;
     height: 450px;
     background: #FFFFFF;
     border-radius: 15px;
     box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
-  transition: all ease 200ms;
+    transition: all ease 200ms;
 }
 
 .game:hover {
@@ -139,19 +176,20 @@ a{
   
 
 .footer{
-    position: absolute;
-    width: 1556px;
-    height: 140px;
-    top: 3564px;
-    background: #FFFFFF;
+    display: flex;
+    position :absolute;
+    height: 10%;
+    width: 100%;
+    top:3300px;
+    background-color: white;
+    align-items: center;
 }
 
 .logo2{
-    position: absolute;
-    width: 140px;
-    height: 70px;
-    left: 100px;
-    top: 38px;
+    position: relative;
+    width:70%;
+    height: 50%;
+    top: 10px;
 }
 
 h3{
@@ -159,7 +197,7 @@ h3{
 width: 402px;
 height: 49px;
 left: 80px;
-top: 95px;
+top: 90px;
 
 font-family: 'Playfair Display';
 font-style: normal;
@@ -177,7 +215,7 @@ h5{
 width: 380px;
 height: 25px;
 left: 80px;
-top: 189px;
+top: 200px;
 
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
@@ -192,10 +230,11 @@ color: #000000;
 }
 
 .gameIcon{
+    
     position: absolute;
-    width: 413px;
-    height: 410px;
-    left: 499px;
+    width: 40%;
+    height: 90%;
+    left: 55%;
     top: 20px;
 }
 
@@ -204,6 +243,7 @@ color: #000000;
     width: 304px;
     height: 68px;
     left: 80px;
+    top: 319px;
     
 
     background: rgba(2, 130, 150, 0.66);
@@ -216,7 +256,7 @@ h2{
     width: 304px;
     height: 68px;
     left: 80px;
-
+    top: 20px;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -229,3 +269,301 @@ h2{
     color: #FFFFFF;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px){
+
+.header{
+    display: flex;
+    position :absolute;
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    
+}
+.logoSide{
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    padding-left: 7%;
+    align-items: center;
+   
+}
+.textSide{
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 40%;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.headerText{
+    position: relative;
+    width: auto;
+    height: 23px;
+
+
+    font-family: 'Open Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 360;
+    font-size: 80%;
+    color: #000000;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo{
+    position: relative;
+    width:60%;
+    height: 40%;
+    
+}
+
+.zagolovok{
+    display: flex;
+    flex-direction: column;
+    top:8%;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    background: url(back.png);
+}
+
+
+
+
+.text1{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    padding: 2% 0 0 1%;
+    z-index: 3;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 140%;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.text2{
+    display: flex;
+    position:absolute;
+    width: 90%;
+    height: auto;
+    padding: 0 2% 5% 1%;
+    z-index: 3;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 365;
+    font-size: 100%;
+    line-height:100%;
+    color: #FFFFFF;
+}
+
+.icon{
+    display: flex;
+    position: absolute;
+    width: 75%;
+    height: 70%;
+    left: 25%;
+    top: 30%;
+    z-index: 2;
+    filter: brightness(60%);
+}
+
+.theory{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 5% 10% 5% 10%;
+    top: 48%;
+    background: #FFFFFF;
+    flex-direction: column;
+    justify-items: center;
+    z-index: 2;
+}
+
+.text3{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: auto;
+    
+    margin: 5% 0 2% 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 590;
+    font-size: 130%;
+    line-height: 118%; 
+    color: #000000;
+}
+.text4{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: auto;
+    
+    margin: 5% 0 5% 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90%;
+    line-height: 120%; 
+    color: #000000;
+}
+
+.games{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 160%;
+    padding: 18% 7% 18% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 147, 147, 0.17);
+}
+
+.game{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 450px;
+    margin: 5%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+    transition: all ease 200ms;
+}
+
+.game:hover {
+    transform: scale(1.03);
+    box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+  }
+  
+
+.footer{
+    display: flex;
+    position :absolute;
+    height: 8%;
+    width: 100%;
+    top:450%;
+    background-color: white;
+    align-items: center;
+    z-index: 3;
+}
+
+.logo2{
+    position: relative;
+    width:60%;
+    height: 40%;
+}
+
+h3{
+    position: absolute;
+width: 80%;
+height: 49px;
+left: 15%;
+top: 36%;
+margin-bottom: 3%;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 150%;
+line-height: 28px;
+/* or 56% */
+
+
+color: #000000;  
+}
+
+h5{
+    position: absolute;
+width: 80%;
+height: 25px;
+left: 15%;
+top: 48%;
+margin-top: 3%;
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 80%;
+line-height: 23px;
+/* identical to box height, or 83% */
+
+
+color: #000000;
+
+}
+
+.gameIcon{
+    position: relative;
+    justify-self: center;
+    display: flex;
+    
+    width: 55%;
+    height: 32%;
+    left: 25%;
+    top: 2%;
+    z-index: 2;
+}
+
+.startButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    height: 14%;
+    left: 16%;
+    top:78%;
+
+    background: rgba(2, 130, 150, 0.66);
+    color:#FFFFFF;
+    border-radius: 25px;
+}
+
+h2{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left:20%;
+    top:25%;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150%;
+    line-height: 25px;
+    /* or 71% */
+
+
+    color: #FFFFFF;
+}
+
+}

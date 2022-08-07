@@ -4,8 +4,9 @@
     height: 860px;
     left: 0px;
     top: 70px;
+    /* background: rgba(0, 147, 147, 0.17); */
+    background: rgba(200, 143, 28, 0.416);
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url(gameBack.png);
 }
 .slide{
     position: absolute;
@@ -19,6 +20,7 @@
 }
 
 .app {
+    
     background: rgba(0, 147, 147, 0.17);
     width: 1180px;
     min-height: 730px;

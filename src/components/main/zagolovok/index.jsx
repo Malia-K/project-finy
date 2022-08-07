@@ -2,7 +2,7 @@ import icon from "./icon.png";
 
 export const Zagolovok = () => {
     return (
-       <div className="zagolovok" style={{top: "70px",width: "1560px",height: "380px",}}>
+       <div className="zagolovok" >
             <div className="text1">
                 Открой для себя 
                 финансовую  грамотность
