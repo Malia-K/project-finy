@@ -2,7 +2,6 @@ import * as React from 'react';
 import game1 from "../../content/gameIcons/game1.png";
 import game2 from "../../content/gameIcons/game2.png";
 import game3 from "../../content/gameIcons/game3.png";
-import game4 from "../../content/gameIcons/game4.png";
 import { Link } from "react-router-dom";
 import '../../../App.css';
 
@@ -43,17 +42,7 @@ export const Games = () => {
                     </div>
                 </Link>
             </div>
-            
-            <div className="game">
-                <h3>Финансовое мышление</h3>
-                <h5>Как твердо стоять на ногах в финансовом плане и принимать разумные решения</h5>
-                <img className='gameIcon' src={game4} alt = "game1"></img>
-                <Link to = "/game4">
-                    <div className='startButton'>
-                        <h2 >НАЧАТЬ</h2>
-                    </div>
-                </Link>
-            </div>
+        
        </div>       
     );
 };

@@ -1,11 +1,12 @@
 import './game1.css';
 
-import { Header } from "../../main/header";
+import { Header1 } from "./header";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 
 import React from 'react';
 import {Carousel} from "react-bootstrap";
+import { ReactComponent as Slide0 } from './photos/slide0.svg';
 import { ReactComponent as Slide1 } from './photos/slide1.svg';
 import { ReactComponent as Slide2 } from './photos/slide2.svg';
 import { Link } from "react-router-dom";
@@ -15,10 +16,13 @@ import { Link } from "react-router-dom";
 export const Game1 = ()=>{
     return (
         <>
-            <Header />
+            <Header1 />
             <div className='background'>
                 <div >
                     <Carousel fade interval={null}>
+                        <Carousel.Item>
+                            <Slide0 />
+                        </Carousel.Item>
                         <Carousel.Item>
                             <Slide1 />
                         </Carousel.Item>

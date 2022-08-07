@@ -1,13 +1,12 @@
 .background{
     position: absolute;
     width: 1560px;
-    height: 860px;
+    height: 500%;
     left: 0px;
-    top: 70px;
-    /* background: rgba(0, 147, 147, 0.17); */
-    background: rgba(200, 143, 28, 0.416);
-
+    top: 50px;
+    background: rgba(176, 146, 13, 0.332);
 }
+
 .slide{
     position: absolute;
     width: 1180px;

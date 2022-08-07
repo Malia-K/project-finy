@@ -1,12 +1,12 @@
 .background{
     position: absolute;
     width: 1560px;
-    height: 860px;
+    height: 500%;
     left: 0px;
-    top: 70px;
-
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url(gameBack.png);
+    top: 50px;
+    background: rgba(176, 146, 13, 0.332);
 }
+
 .slide{
     position: absolute;
     width: 1180px;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Confetti from 'react-confetti'
-import { Header } from "../../main/header";
+import Confetti from 'react-confetti';
+import { Header3 } from "./header";
 import './gamestart.css';
 
 import { Link } from "react-router-dom";
@@ -94,7 +94,7 @@ export const ThirdGame = () =>{
 	};
     return(
         <>
-        <Header />
+        <Header3 />
             <div className='background'>
                 <div className='slide'>
                     <div className='app'>

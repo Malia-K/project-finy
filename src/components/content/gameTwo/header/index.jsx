@@ -1,9 +1,9 @@
 import logo from "./logo.png";
+import '../game2.css';
 
-
-export const Header = () => {
+export const Header2 = () => {
     return (
-        <header className="header">
+        <header className="header_game">
             <div className="logoSide">
                 <a href = "/">
                     <img className="logo" src = {logo} alt = "logo"></img>  
